@@ -1,23 +1,23 @@
-def calculate(firstNumber, secondNumber, operator):
+def calculate(number1, number2, operator):
     if operator == '+':
-        result = firstNumber + secondNumber
+        result = number1 + number2
     elif operator == "-":
-        result = firstNumber - secondNumber
+        result = number1 - number2
     elif operator == "*":
-        result = firstNumber * secondNumber
+        result = number1 * number2
     elif operator == "/":
-        if (secondNumber == 0):
+        if (number2 == 0):
             result = "Division by zero is invalid."
         else:
-            result = firstNumber / secondNumber
+            result = number1 / number2
 
     return result
 
 
-firstNumber = float(input("Enter the first number "))
-secondNumber = float(input("Enter the second number "))
+number1 = float(input("Enter the first number "))
+number2 = float(input("Enter the second number "))
 operator = input("Enter the operator ")
 
-result = calculate(firstNumber, secondNumber, operator)
+result = calculate(number1, number2, operator)
 
 print(result)

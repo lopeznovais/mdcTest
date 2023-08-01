@@ -3,5 +3,5 @@ def table(number):
         result = number * i
         print(f"{number} x {i} = {result}")
 
-number = int(input())
+number = int(input("Enter a number "))
 table(number)
